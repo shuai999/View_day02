@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--name 为你自定义View的名字-->
+    <declare-styleable name="TextView">
+
+        <!-- name 为属性名称
+
+            format 格式：
+                   string 表示文字
+                   color  表示颜色
+                   dimension  表示宽、高、字体大小
+                   integer  表示数字
+                   referen  表示资源 （如drawable、mipmap下的图片）
+        -->
+        <attr name="jackText" format="string"/>
+        <attr name="jackTextColor" format="color"/>
+        <attr name="jackTextSize" format="dimension"/>
+        <attr name="jackMaxLength" format="integer"/>
+
+        <!--background 系统已经自定过了不需要自己重新定义 ，
+            自定义View都是继承自系统的View , 背景background由View管理的
+        -->
+        <!--<attr name="background" format="reference|color"/>-->
+
+
+        <!-- 枚举 -->
+        <attr name="jackInputType">
+            <enum name="number" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="password" value="3"/>
+        </attr>
+
+    </declare-styleable>
+</resources>
